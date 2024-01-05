@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "vokino_app_logo_front.pdf",
+      "idiom" : "tv"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

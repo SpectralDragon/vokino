@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "vokino_itunes_logo_middle.png",
+      "idiom" : "tv"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

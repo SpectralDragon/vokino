@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB40F7652B461D310012D097 /* WebView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB40F7642B461D310012D097 /* WebView.m */; };
+		DB40F76A2B4627A70012D097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB40F7692B4627A70012D097 /* AppDelegate.swift */; };
+		DB40F76C2B464B230012D097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB40F76B2B464B230012D097 /* LaunchScreen.storyboard */; };
+		DB40F76E2B464CCC0012D097 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB40F76D2B464CCC0012D097 /* LaunchScreenView.swift */; };
+		DB40F7722B464FF10012D097 /* VoKinoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB40F7712B464FF10012D097 /* VoKinoViewModel.swift */; };
+		DB40F7772B46626A0012D097 /* AVVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB40F7762B46626A0012D097 /* AVVideoPlayer.swift */; };
+		DB40F77F2B47230E0012D097 /* TVServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB40F77E2B47230E0012D097 /* TVServices.framework */; };
+		DB40F7822B47230E0012D097 /* ContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB40F7812B47230E0012D097 /* ContentProvider.swift */; };
+		DB40F7862B47230E0012D097 /* VoKinoTopShalf.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DB40F77C2B47230E0012D097 /* VoKinoTopShalf.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DBC7DBAC2B31942200077C24 /* VoKinoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC7DBAB2B31942200077C24 /* VoKinoApp.swift */; };
+		DBC7DBAE2B31942200077C24 /* VoKinoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC7DBAD2B31942200077C24 /* VoKinoView.swift */; };
+		DBC7DBB02B31942400077C24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC7DBAF2B31942400077C24 /* Assets.xcassets */; };
+		DBC7DBB32B31942400077C24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC7DBB22B31942400077C24 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB40F7842B47230E0012D097 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBC7DBA02B31942200077C24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB40F77B2B47230E0012D097;
+			remoteInfo = VoKinoTopShalf;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DB40F78A2B47230E0012D097 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DB40F7862B47230E0012D097 /* VoKinoTopShalf.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DB40F7632B461D300012D097 /* VoKino-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VoKino-Bridging-Header.h"; sourceTree = "<group>"; };
+		DB40F7642B461D310012D097 /* WebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebView.m; sourceTree = "<group>"; };
+		DB40F7662B461D3B0012D097 /* WebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebView.h; sourceTree = "<group>"; };
+		DB40F7672B4622070012D097 /* WebViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewDelegate.h; sourceTree = "<group>"; };
+		DB40F7682B46253C0012D097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DB40F7692B4627A70012D097 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB40F76B2B464B230012D097 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB40F76D2B464CCC0012D097 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		DB40F7712B464FF10012D097 /* VoKinoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoKinoViewModel.swift; sourceTree = "<group>"; };
+		DB40F7762B46626A0012D097 /* AVVideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVVideoPlayer.swift; sourceTree = "<group>"; };
+		DB40F77C2B47230E0012D097 /* VoKinoTopShalf.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VoKinoTopShalf.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB40F77E2B47230E0012D097 /* TVServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TVServices.framework; path = System/Library/Frameworks/TVServices.framework; sourceTree = SDKROOT; };
+		DB40F7812B47230E0012D097 /* ContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentProvider.swift; sourceTree = "<group>"; };
+		DB40F7832B47230E0012D097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBC7DBA82B31942200077C24 /* VoKino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoKino.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBC7DBAB2B31942200077C24 /* VoKinoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoKinoApp.swift; sourceTree = "<group>"; };
+		DBC7DBAD2B31942200077C24 /* VoKinoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoKinoView.swift; sourceTree = "<group>"; };
+		DBC7DBAF2B31942400077C24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBC7DBB22B31942400077C24 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB40F7792B47230E0012D097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB40F77F2B47230E0012D097 /* TVServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC7DBA52B31942200077C24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB40F76F2B464FDA0012D097 /* UserFlow */ = {
+			isa = PBXGroup;
+			children = (
+				DB40F76D2B464CCC0012D097 /* LaunchScreenView.swift */,
+				DB40F7702B464FE90012D097 /* WebApp */,
+			);
+			path = UserFlow;
+			sourceTree = "<group>";
+		};
+		DB40F7702B464FE90012D097 /* WebApp */ = {
+			isa = PBXGroup;
+			children = (
+				DB40F7762B46626A0012D097 /* AVVideoPlayer.swift */,
+				DBC7DBAD2B31942200077C24 /* VoKinoView.swift */,
+				DB40F7712B464FF10012D097 /* VoKinoViewModel.swift */,
+			);
+			path = WebApp;
+			sourceTree = "<group>";
+		};
+		DB40F7732B46501B0012D097 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				DB40F7642B461D310012D097 /* WebView.m */,
+				DB40F7662B461D3B0012D097 /* WebView.h */,
+				DB40F7672B4622070012D097 /* WebViewDelegate.h */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		DB40F77D2B47230E0012D097 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB40F77E2B47230E0012D097 /* TVServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB40F7802B47230E0012D097 /* VoKinoTopShalf */ = {
+			isa = PBXGroup;
+			children = (
+				DB40F7812B47230E0012D097 /* ContentProvider.swift */,
+				DB40F7832B47230E0012D097 /* Info.plist */,
+			);
+			path = VoKinoTopShalf;
+			sourceTree = "<group>";
+		};
+		DBC7DB9F2B31942200077C24 = {
+			isa = PBXGroup;
+			children = (
+				DBC7DBAA2B31942200077C24 /* VoKino */,
+				DB40F7802B47230E0012D097 /* VoKinoTopShalf */,
+				DB40F77D2B47230E0012D097 /* Frameworks */,
+				DBC7DBA92B31942200077C24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBC7DBA92B31942200077C24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBC7DBA82B31942200077C24 /* VoKino.app */,
+				DB40F77C2B47230E0012D097 /* VoKinoTopShalf.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBC7DBAA2B31942200077C24 /* VoKino */ = {
+			isa = PBXGroup;
+			children = (
+				DB40F7732B46501B0012D097 /* WebView */,
+				DB40F76F2B464FDA0012D097 /* UserFlow */,
+				DB40F76B2B464B230012D097 /* LaunchScreen.storyboard */,
+				DB40F7682B46253C0012D097 /* Info.plist */,
+				DBC7DBAB2B31942200077C24 /* VoKinoApp.swift */,
+				DBC7DBAF2B31942400077C24 /* Assets.xcassets */,
+				DBC7DBB12B31942400077C24 /* Preview Content */,
+				DB40F7692B4627A70012D097 /* AppDelegate.swift */,
+				DB40F7632B461D300012D097 /* VoKino-Bridging-Header.h */,
+			);
+			path = VoKino;
+			sourceTree = "<group>";
+		};
+		DBC7DBB12B31942400077C24 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DBC7DBB22B31942400077C24 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB40F77B2B47230E0012D097 /* VoKinoTopShalf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB40F7872B47230E0012D097 /* Build configuration list for PBXNativeTarget "VoKinoTopShalf" */;
+			buildPhases = (
+				DB40F7782B47230E0012D097 /* Sources */,
+				DB40F7792B47230E0012D097 /* Frameworks */,
+				DB40F77A2B47230E0012D097 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoKinoTopShalf;
+			productName = VoKinoTopShalf;
+			productReference = DB40F77C2B47230E0012D097 /* VoKinoTopShalf.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		DBC7DBA72B31942200077C24 /* VoKino */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBC7DBB62B31942400077C24 /* Build configuration list for PBXNativeTarget "VoKino" */;
+			buildPhases = (
+				DBC7DBA42B31942200077C24 /* Sources */,
+				DBC7DBA52B31942200077C24 /* Frameworks */,
+				DBC7DBA62B31942200077C24 /* Resources */,
+				DB40F78A2B47230E0012D097 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB40F7852B47230E0012D097 /* PBXTargetDependency */,
+			);
+			name = VoKino;
+			productName = VoKino;
+			productReference = DBC7DBA82B31942200077C24 /* VoKino.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBC7DBA02B31942200077C24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DB40F77B2B47230E0012D097 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					DBC7DBA72B31942200077C24 = {
+						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
+					};
+				};
+			};
+			buildConfigurationList = DBC7DBA32B31942200077C24 /* Build configuration list for PBXProject "VoKino" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBC7DB9F2B31942200077C24;
+			productRefGroup = DBC7DBA92B31942200077C24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBC7DBA72B31942200077C24 /* VoKino */,
+				DB40F77B2B47230E0012D097 /* VoKinoTopShalf */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB40F77A2B47230E0012D097 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC7DBA62B31942200077C24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB40F76C2B464B230012D097 /* LaunchScreen.storyboard in Resources */,
+				DBC7DBB32B31942400077C24 /* Preview Assets.xcassets in Resources */,
+				DBC7DBB02B31942400077C24 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB40F7782B47230E0012D097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB40F7822B47230E0012D097 /* ContentProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC7DBA42B31942200077C24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB40F7722B464FF10012D097 /* VoKinoViewModel.swift in Sources */,
+				DB40F7772B46626A0012D097 /* AVVideoPlayer.swift in Sources */,
+				DB40F76E2B464CCC0012D097 /* LaunchScreenView.swift in Sources */,
+				DB40F76A2B4627A70012D097 /* AppDelegate.swift in Sources */,
+				DB40F7652B461D310012D097 /* WebView.m in Sources */,
+				DBC7DBAE2B31942200077C24 /* VoKinoView.swift in Sources */,
+				DBC7DBAC2B31942200077C24 /* VoKinoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB40F7852B47230E0012D097 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB40F77B2B47230E0012D097 /* VoKinoTopShalf */;
+			targetProxy = DB40F7842B47230E0012D097 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DB40F7882B47230E0012D097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4NG482RNM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoKinoTopShalf/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VoKinoTopShalf;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.litecode.VoKino.VoKinoTopShalf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		DB40F7892B47230E0012D097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4NG482RNM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoKinoTopShalf/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VoKinoTopShalf;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.litecode.VoKino.VoKinoTopShalf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		DBC7DBB42B31942400077C24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Debug;
+		};
+		DBC7DBB52B31942400077C24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBC7DBB72B31942400077C24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VoKino/Preview Content\"";
+				DEVELOPMENT_TEAM = Q4NG482RNM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoKino/Info.plist;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.litecode.VoKino;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VoKino/VoKino-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		DBC7DBB82B31942400077C24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VoKino/Preview Content\"";
+				DEVELOPMENT_TEAM = Q4NG482RNM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoKino/Info.plist;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.litecode.VoKino;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VoKino/VoKino-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB40F7872B47230E0012D097 /* Build configuration list for PBXNativeTarget "VoKinoTopShalf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB40F7882B47230E0012D097 /* Debug */,
+				DB40F7892B47230E0012D097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBC7DBA32B31942200077C24 /* Build configuration list for PBXProject "VoKino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBC7DBB42B31942400077C24 /* Debug */,
+				DBC7DBB52B31942400077C24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBC7DBB62B31942400077C24 /* Build configuration list for PBXNativeTarget "VoKino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBC7DBB72B31942400077C24 /* Debug */,
+				DBC7DBB82B31942400077C24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBC7DBA02B31942200077C24 /* Project object */;
+}
