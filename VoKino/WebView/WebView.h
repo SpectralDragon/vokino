@@ -16,6 +16,7 @@
 @property(weak, nullable) id<WebViewDelegate> delegate;
 
 - (void)loadByURLRequest:(NSURLRequest * _Nonnull)request;
+- (void)reload;
 - (nullable NSString *)webViewStringByEvaluatingJavaScriptFromString:(NSString * _Nonnull)string NS_SWIFT_NAME(stringByEvaluatingJavaScript(from:));
 
 @end

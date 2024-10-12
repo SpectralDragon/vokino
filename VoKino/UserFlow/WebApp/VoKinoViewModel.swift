@@ -53,7 +53,11 @@ class VoKinoViewModel: NSObject {
     func stopStreaming() {
         self.videoPlayer = nil
     }
-    
+
+    func reload() {
+        self.webView?.reload()
+    }
+
     // MARK: - Private
     
     private func dispatchKeyboardEvent(_ type: String, keyCode: Int) {

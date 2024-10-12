@@ -13,21 +13,24 @@ struct VoKinoView: View {
     @State private var viewModel = VoKinoViewModel()
 
     var body: some View {
-        webApp
-            .fullScreenCover(isPresented: $viewModel.isShowPlayer, onDismiss: viewModel.stopStreaming) {
-                AVVideoPlayer(player: viewModel.videoPlayer!)
-                    .onAppear {
-                        viewModel.videoPlayer?.play()
-                    }
-                    .ignoresSafeArea(.all)
-            }
-            .alert("Error", isPresented: $viewModel.isShowPlayer) {
-                Button("Close") {
-                    viewModel.isShowPlayer = false
+        ZStack {
+            webApp
+        }
+        .fullScreenCover(isPresented: $viewModel.isShowPlayer, onDismiss: viewModel.stopStreaming) {
+            AVVideoPlayer(player: viewModel.videoPlayer!)
+                .onAppear {
+                    viewModel.videoPlayer?.play()
                 }
-            } message: {
-                Text(viewModel.error?.localizedDescription ?? "Error")
+                .ignoresSafeArea(.all)
+        }
+        .alert("Error", isPresented: $viewModel.isErrorShown) {
+            Button("Close and Reload") {
+                viewModel.reload()
+                viewModel.isErrorShown = false
             }
+        } message: {
+            Text(viewModel.error?.localizedDescription ?? "Error")
+        }
     }
     
     var webApp: some View {

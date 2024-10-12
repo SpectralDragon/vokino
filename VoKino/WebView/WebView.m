@@ -30,6 +30,10 @@
     [_webview loadRequest:request];
 }
 
+- (void)reload {
+    [_webview reload];
+}
+
 - (void)layoutSubviews {
     [super layoutSubviews];
     UIScrollView *scrollView = [self.webview scrollView];

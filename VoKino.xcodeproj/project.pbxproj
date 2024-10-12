@@ -47,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		48309ADC2CBB361200459901 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DB40F7632B461D300012D097 /* VoKino-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VoKino-Bridging-Header.h"; sourceTree = "<group>"; };
 		DB40F7642B461D310012D097 /* WebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebView.m; sourceTree = "<group>"; };
 		DB40F7662B461D3B0012D097 /* WebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebView.h; sourceTree = "<group>"; };
@@ -154,6 +155,7 @@
 		DBC7DBAA2B31942200077C24 /* VoKino */ = {
 			isa = PBXGroup;
 			children = (
+				48309ADC2CBB361200459901 /* Info.plist */,
 				DB40F7732B46501B0012D097 /* WebView */,
 				DB40F76F2B464FDA0012D097 /* UserFlow */,
 				DB40F76B2B464B230012D097 /* LaunchScreen.storyboard */,
@@ -487,6 +489,7 @@
 				DEVELOPMENT_TEAM = 8PYCRS3EA3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoKino/Info.plist;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
@@ -518,6 +521,7 @@
 				DEVELOPMENT_TEAM = 8PYCRS3EA3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoKino/Info.plist;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
