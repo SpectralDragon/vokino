@@ -10,8 +10,8 @@ import AVKit
 
 struct VoKinoView: View {
     
-    @StateObject private var viewModel = VoKinoViewModel()
-    
+    @State private var viewModel = VoKinoViewModel()
+
     var body: some View {
         webApp
             .fullScreenCover(isPresented: $viewModel.isShowPlayer, onDismiss: viewModel.stopStreaming) {
@@ -21,10 +21,17 @@ struct VoKinoView: View {
                     }
                     .ignoresSafeArea(.all)
             }
+            .alert("Error", isPresented: $viewModel.isShowPlayer) {
+                Button("Close") {
+                    viewModel.isShowPlayer = false
+                }
+            } message: {
+                Text(viewModel.error?.localizedDescription ?? "Error")
+            }
     }
     
     var webApp: some View {
-        UIKitWebView(viewModel: viewModel)
+        UIKitWebView(viewModel: $viewModel)
             .focusable(interactions: .activate)
             .onMoveCommand { direction in
                 switch direction {
@@ -64,18 +71,20 @@ struct VoKinoView: View {
 
 struct UIKitWebView: UIViewRepresentable {
     
-    @ObservedObject var viewModel: VoKinoViewModel
-    
+    @Binding var viewModel: VoKinoViewModel
+
     func makeUIView(context: Context) -> WebView {
         let webView = WebView()
         webView.backgroundColor = .black
         webView.isUserInteractionEnabled = false
         webView.delegate = viewModel
-        let request = URLRequest(url: URL(string: "http://web.vokino.tv")!)
+        let request = URLRequest(
+            url: URL(string: "http://web.vokino.tv")!,
+            cachePolicy: .reloadIgnoringLocalCacheData,
+            timeoutInterval: 20
+        )
         webView.load(by: request)
-        
         viewModel.webView = webView
-        
         return webView
     }
     

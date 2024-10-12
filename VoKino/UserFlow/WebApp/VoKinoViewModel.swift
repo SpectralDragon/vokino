@@ -8,7 +8,8 @@
 import SwiftUI
 import AVFoundation
 
-class VoKinoViewModel: NSObject, ObservableObject {
+@Observable
+class VoKinoViewModel: NSObject {
     
     weak var webView: WebView?
     
@@ -23,11 +24,13 @@ class VoKinoViewModel: NSObject, ObservableObject {
         case exit
     }
     
-    @Published var videoPlayer: AVPlayer?
-    @Published var isShowPlayer: Bool = false
-    @Published private(set) var isFirstLoading: Bool = true
-    @Published private(set) var isLoading: Bool = false
-    
+    var videoPlayer: AVPlayer?
+    var isShowPlayer: Bool = false
+    private(set) var isFirstLoading: Bool = true
+    private(set) var isLoading: Bool = false
+    var error: Error?
+    var isErrorShown = false
+
     func processRemoteCommand(_ command: RemoteControlCommand) {
         switch command {
         case .left:
@@ -61,6 +64,11 @@ class VoKinoViewModel: NSObject, ObservableObject {
         let result = webView?.stringByEvaluatingJavaScript(from: string)
         print(result)
     }
+
+    private func showError(_ error: Error) {
+        self.error = error
+        self.isErrorShown = true
+    }
 }
 
 // MARK: - WebViewDelegate
@@ -90,9 +98,9 @@ extension VoKinoViewModel: WebViewDelegate {
     }
     
     func webView(_ webView: WebView, didFailLoadWithError error: Error) {
-        print(error.localizedDescription)
+        showError(error)
     }
-    
+
     func webView(_ webView: WebView, shouldStartLoadWith request: URLRequest?, navigationType: Int) -> Bool {
         if let url = request?.url, !url.pathExtension.isEmpty {
             let item = AVPlayerItem(url: url)
